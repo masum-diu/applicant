@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-6xl">
+        <h2 class="text-2xl font-bold text-center text-blue-500">Applicant Information</h2>
+
+        <form  class="mt-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium">Applicant Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+
+
+                <!-- Last Name -->
+                <div>
+                    <label for="last-name" class="block text-gray-700 font-medium">Sumame (Last Name)</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter last name"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+                <!-- First Name -->
+                <div>
+                    <label for="first-name" class="block text-gray-700 font-medium">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter first name"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+
+                <!-- Middle Name -->
+                <div>
+                    <label for="middle-name" class="block text-gray-700 font-medium">Middle Name</label>
+                    <input type="text" id="middle-name" name="middle-name" placeholder="Enter middle name"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+
+
+                <!-- Telephone -->
+                <div>
+                    <label for="telephone" class="block text-gray-700 font-medium">Telephone</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Enter telephone number"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+
+                <!-- Client Reference Number -->
+                <div>
+                    <label for="client-reference" class="block text-gray-700 font-medium">Client Reference
+                        Number</label>
+                    <input type="text" id="client-reference" name="client-reference"
+                        placeholder="Enter reference number"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+            </div>
+
+            <!-- Additional Information (Full Width) -->
+            <div class="mt-4">
+                <label for="additional-info" class="block text-gray-700 font-medium">Additional Processing Info</label>
+                <textarea id="additional-info" name="additional-info" rows="4" placeholder="Write additional details"
+                    class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"></textarea>
+            </div>
+            <!-- services area -->
+            <div class="bg-gray-300 p-1 mt-3">
+                <p>Services Selection <span class="font-bold">Not for Vulnerable Sector</span></p>
+
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-3 border-b-2 border-black">
+                <div class="flex items-center mb-4">
+
+                </div>
+                <div class="flex items-center mb-4">
+                    <label for="agree" class="ml-2 text-gray-700">Fee</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <label for="agree" class="ml-2 text-gray-700">Hint for Applicant</label>
+                </div>
+                
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 pt-3 ">
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="agree" name="agree"
+                        class="w-4 h-4 text-blue-500 border-gray-300 rounded focus:ring-blue-400">
+                    <label for="agree" class="ml-2 text-gray-700 ">Standard Police Records Search</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <label for="agree" class="ml-2 text-gray-700">$20.00</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="text" id="client-reference" name="client-reference"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="agree" name="agree"
+                        class="w-4 h-4 text-blue-500 border-gray-300 rounded focus:ring-blue-400">
+                    <label for="agree" class="ml-2 text-gray-700 ">Consumer credit check</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <!-- <label for="agree" class="ml-2 text-gray-700">$20.00</label> -->
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="text" id="client-reference" name="client-reference"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="agree" name="agree"
+                        class="w-4 h-4 text-blue-500 border-gray-300 rounded focus:ring-blue-400">
+                    <label for="agree" class="ml-2 text-gray-700 ">Education/credential verification</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <!-- <label for="agree" class="ml-2 text-gray-700">$20.00</label> -->
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="text" id="client-reference" name="client-reference"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="agree" name="agree"
+                        class="w-4 h-4 text-blue-500 border-gray-300 rounded focus:ring-blue-400">
+                    <label for="agree" class="ml-2 text-gray-700 ">Employment - verification</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <!-- <label for="agree" class="ml-2 text-gray-700">$20.00</label> -->
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="text" id="client-reference" name="client-reference"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="agree" name="agree"
+                        class="w-4 h-4 text-blue-500 border-gray-300 rounded focus:ring-blue-400">
+                    <label for="agree" class="ml-2 text-gray-700 ">Employment - Reference</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <!-- <label for="agree" class="ml-2 text-gray-700">$20.00</label> -->
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="text" id="client-reference" name="client-reference"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+                
+            </div>
+           
+                <h4 class="text-lg font-semibold mb-3">Select a Color</h4>
+        
+                <select id="colorSelect" onchange="showSelectedColor()"
+                    class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="">-- Select a color --</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                </select>
+        
+                
+           
+            <!-- Submit Button -->
+            <button type="submit"
+                class="mt-6 w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-300">
+                Issue Invitation
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
